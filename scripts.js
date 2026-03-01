@@ -26,8 +26,8 @@ async function gerarReceita() {
         })
     })
 
-
     alert(resposta)
 }
 botao.addEventListener("click", gerarReceita)
+
 
