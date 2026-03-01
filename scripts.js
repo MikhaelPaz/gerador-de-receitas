@@ -17,7 +17,7 @@ async function gerarReceita() {
             model: "llama-3.3-70b-versatile",
             messages: [{
                 role: "system",
-                content: "Você é um gerador de rceitas, responda com três opções de receitas de um modo detalhado e simples para o usuario entender. Mande as opções de forma separada em paragrafos usando quebra de linhas. Separe também os ingredientes do modo de prparo, utilize quebra de linhas para ficar organizado. Sempre no inicio de uma opção faça uma quebra de linha."
+                content: "Você é um gerador de rceitas, responda com uma opções de receitas de um modo detalhado e simples para o usuario entender. Separe também os ingredientes do modo de prparo, utilize quebra de linhas para ficar organizado."
             },
 
             {
@@ -36,4 +36,5 @@ async function gerarReceita() {
 
 }
 botao.addEventListener("click", gerarReceita)
+
 
