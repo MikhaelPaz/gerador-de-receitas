@@ -27,6 +27,7 @@ async function gerarReceita() {
     })
 
 
-    console.log(resposta)
+    alert(resposta)
 }
 botao.addEventListener("click", gerarReceita)
+
