@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(63, 62, 62);
+    text-align: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+#caixa{
+    width: 25%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(133, 131, 131);
+    text-align: center;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#caixa:hover{
+    background-color: rgb(185, 182, 182);
+}
+#botao{
+    border-radius: 30px;
+    background-color: rgb(108, 97, 153);
+    text-align: center;
+    height: 40px;
+    width: 10%;
+
+
+}
+#botao:hover{
+    background-color: rgb(73, 66, 104);
+
+}
