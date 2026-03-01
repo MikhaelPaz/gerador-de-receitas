@@ -3,12 +3,14 @@ body{
     text-align: center;
 }
 h1{
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
 }
 #caixa{
-    width: 25%;
+    width: 450px;
+    max-width: 80%;
     height: 40px;
     border-radius: 30px;
     border: none;
@@ -28,11 +30,27 @@ input::placeholder{
     background-color: rgb(108, 97, 153);
     text-align: center;
     height: 40px;
-    width: 10%;
-
+    width: 150px;
+    max-width: 100%;
 
 }
 #botao:hover{
     background-color: rgb(73, 66, 104);
 
+}
+div{
+    margin-top: 30px;
+    margin-left: 10%;
+    border: 3px solid  black;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;      /* Atalho para centralizar nos dois eixos */
+    width: 80%;
+
+}
+.receita{
+    text-align: center;
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
