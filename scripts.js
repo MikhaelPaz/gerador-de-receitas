@@ -6,7 +6,6 @@ async function gerarReceita() {
     let blocoReceita = document.querySelector(".receita")
 
 
-
     let resposta = await fetch(endereco, {
         method: "POST",
         headers: {
@@ -36,5 +35,6 @@ async function gerarReceita() {
 
 }
 botao.addEventListener("click", gerarReceita)
+
 
 
