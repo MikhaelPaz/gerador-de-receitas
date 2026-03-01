@@ -3,6 +3,9 @@ let endereco = "https://api.groq.com/openai/v1/chat/completions"
 
 async function gerarReceita() {
     let textoUsuario = document.querySelector("#caixa").value
+    let blocoReceita = document.querySelector(".receita")
+
+
 
     let resposta = await fetch(endereco, {
         method: "POST",
@@ -26,8 +29,10 @@ async function gerarReceita() {
         })
     })
 
-    alert(resposta)
+    let dados = await resposta.json()
+    let resultado = dados.choices[0].message.content
+     
+    blocoReceita.textContent = resultado
+
 }
 botao.addEventListener("click", gerarReceita)
-
-
